@@ -15,6 +15,8 @@ style: |
 
 ---
 
+# ![](themes/symfoniacs/images/title.jpeg){:.logo}
+
 ## {{ site.presentation.title }}
 {:.title}
 
