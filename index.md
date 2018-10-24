@@ -16,6 +16,8 @@ style: |
 ---
 # ![](themes/symfoniacs/images/title.jpeg){:.logo}
 
+Symfoniacs SPB #4
+
 ## {{ site.presentation.title }}
 {:.title}
 
