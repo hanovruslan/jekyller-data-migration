@@ -15,10 +15,12 @@ style: |
 
 ---
 
-# ![](themes/symfoniacs/images/title.jpeg){:.logo}
+# ![](themes/yandex2/images/logo-{{ site.presentation.lang }}.svg){:.logo}
 
 ## {{ site.presentation.title }}
 {:.title}
+
+### ![](themes/yandex2/images/title-logo-{{ site.presentation.lang }}.svg){{ site.presentation.service }}
 
 <div class="authors">
 {% if site.author %}
@@ -26,6 +28,7 @@ style: |
 {% endif %}
 </div>
 
+## Цели
 ## Цель
 
 **Автоматизация изменения системных данных**
