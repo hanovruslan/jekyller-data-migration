@@ -10,7 +10,7 @@ default_ratio: 16x9
 default_lang: en
 
 presentation:
-    title: С чего начинается автоматизация
+    title: Doctrine и миграция данных
     nda: false
     lang: ru
 
@@ -18,8 +18,8 @@ author:
     name: Ханов Руслан
     position: Разработчик
     company:
-        name: Яндекс
-        url:  http://yandex.ru/
+        name: ИТМО
+        url:  http://ifmo.ru
 
-fork_url: https://github.yandex-team.ru/evolaze/jekyller
-progress: false
+fork_url: https://github.com/hanovruslan/jekyller-data-migration
+progress: true
