@@ -12,9 +12,14 @@ style: |
     figure.short { width: 480px !important; }
     .text-center { text-align: center !important; }
     img.center { margin: auto !important; }
-
+    img.title { width: 1000px !important; }
+    .symfoniacs { background-color: white !important; }
 ---
-# ![](themes/symfoniacs/images/title.jpeg){:.logo}
+
+## Symfoniacs SPB #4
+{:.section.symfoniacs}
+
+# ![](pictures/logos/symfoniacs.jpeg){:.title}
 
 Symfoniacs SPB #4
 
@@ -33,12 +38,38 @@ Symfoniacs SPB #4
 
 ## Цель
 
-**Автоматизация изменения системных данных**
+### О докладчике
+
+* Разработчик php, java, symfony 1-4
+* Докладчик и организатор митапов Symfoniacs, Москва и Санкт-Петербург
+* Программист по образованию - Новосибирский государственный Университет
+
+## Цель
+
+**Изменения системных данных**
 
 ## Данные
 
 - {:.next}Пользовательские данные
 - {:.next}Системные данные
+
+## Варианты
+{:.images.three.text-center}
+
+![](pictures/logos/composer-240x200.png){:.images-w.center}
+*composer*
+
+![](pictures/logos/symfony-240x200.png){:.images-w.center}
+*symfony console*
+
+![](pictures/logos/bash-240x200.png){:.images-w.center}
+*bash*
+
+
+## Пользовательские данные
+
+- {:.next}Порождаемые пользователем
+- {:.next}Разные версии БД - разные данные
 
 ## Заключение: правила автоматизатора
 
