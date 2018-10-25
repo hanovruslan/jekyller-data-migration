@@ -3,7 +3,6 @@
 layout: yandex2
 
 style: |
-    /* собственные стили можно писать здесь!! */
     .pre-small pre code { font-size: 24px!important; line-height: 48px!important; }
     .pre-big pre code { font-size: 54px !important; line-height: 108px !important; } #  9 lines x 52 symbols
     .big-list { font-size: 80px!important; line-height: 160px!important; }
@@ -16,8 +15,10 @@ style: |
     .symfoniacs { background-color: white !important; }
 ---
 
-## Symfoniacs SPB #4
+# Symfoniacs SPB #4
 {:.section.symfoniacs}
+
+### PropellerAds 30 oct 2018
 
 # ![](pictures/logos/symfoniacs.jpeg){:.title}
 
@@ -71,11 +72,14 @@ Symfoniacs SPB #4
 - {:.next}Порождаемые пользователем
 - {:.next}Разные версии БД - разные данные
 
-## Заключение: правила автоматизатора
+## Заключение
 
 **Знать возможности используемого инструмента со всеми его плюсами и минусами**
 
 **Найти эффективные стыки инструментов исходя из первого пункта**
+
+## Данные - это сложно
+{:.blockquote}
 
 ## Вопросы?
 {:.contacts}
