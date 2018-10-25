@@ -15,21 +15,21 @@ style: |
     .symfoniacs { background-color: white !important; }
 ---
 
-# Symfoniacs SPB #4
+## Symfoniacs SPB #4
 {:.section.symfoniacs}
 
 ### PropellerAds 30 oct 2018
-
+<!--
 # ![](pictures/logos/symfoniacs.jpeg){:.title}
 
 Symfoniacs SPB #4
 
-### PropellerAds 30 oct 2018
+### PropellerAds 30 oct 2018 -->
 
 ## {{ site.presentation.title }}
 {:.title}
 
-### Symfoniacs SPB
+### Symfoniacs SPB #4
 
 <div class="authors">
 {% if site.author %}
