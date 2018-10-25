@@ -15,7 +15,7 @@ style: |
     .symfoniacs { background-color: white !important; }
 ---
 
-## Symfoniacs SPB #4
+# Symfoniacs SPB #4
 {:.section.symfoniacs}
 
 ### PropellerAds 30 oct 2018
