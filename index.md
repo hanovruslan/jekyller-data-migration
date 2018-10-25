@@ -19,12 +19,6 @@ style: |
 {:.section.symfoniacs}
 
 ### PropellerAds 30 oct 2018
-<!--
-# ![](pictures/logos/symfoniacs.jpeg){:.title}
-
-Symfoniacs SPB #4
-
-### PropellerAds 30 oct 2018 -->
 
 ## {{ site.presentation.title }}
 {:.title}
@@ -37,9 +31,7 @@ Symfoniacs SPB #4
 {% endif %}
 </div>
 
-## Цель
-
-### О докладчике
+## О докладчике
 
 * Разработчик php, java, symfony 1-4
 * Докладчик и организатор митапов Symfoniacs, Москва и Санкт-Петербург
@@ -54,23 +46,19 @@ Symfoniacs SPB #4
 - {:.next}Пользовательские данные
 - {:.next}Системные данные
 
-## Варианты
-{:.images.three.text-center}
-
-![](pictures/logos/composer-240x200.png){:.images-w.center}
-*composer*
-
-![](pictures/logos/symfony-240x200.png){:.images-w.center}
-*symfony console*
-
-![](pictures/logos/bash-240x200.png){:.images-w.center}
-*bash*
-
-
 ## Пользовательские данные
 
 - {:.next}Порождаемые пользователем
 - {:.next}Разные версии БД - разные данные
+
+## Инструменты
+
+- {:.next}Doctrine migrations
+- {:.next}Phinx
+- {:.next}Doctrine Fixtures
+- {:.next}Поведенческий плагин
+    - {:.next}KnpLabs DoctrineBehaviors
+    - {:.next}gedmo doctrine extensions
 
 ## Заключение
 
