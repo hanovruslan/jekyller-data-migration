@@ -68,22 +68,16 @@ style: |
 - Phinx Seed
 
 ## Phinx Seed
-{:.fullscreen.pre-small}
+{:.fullscreen}
 ```php
 <?php
 
-use Phinx\Seed\AbstractSeed;
-
-class UserSeeder extends AbstractSeed
-{
-    public function run()
-    {
-        $data = [
-            [
-                'body'    => 'foo',
-                'created' => date('Y-m-d H:i:s'),
-            ],
-        ];
+class UserSeeder extends Phinx\Seed\AbstractSeed {
+    public function run() {
+        $data = [[
+            'body'    => 'foo',
+            'created' => date('Y-m-d H:i:s'),
+        ]];
         $posts = $this->table('posts');
         $posts->insert($data)
               ->save();
