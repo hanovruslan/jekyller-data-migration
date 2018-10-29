@@ -39,7 +39,7 @@ style: |
 
 ## Цель
 
-**Изменения системных данных**
+**Изменение системных данных**
 
 ## Данные
 
@@ -53,8 +53,8 @@ style: |
 
 ## Инструменты
 
-- {:.next}Doctrine migrations
 - {:.next}Phinx
+- {:.next}Doctrine migrations
 - {:.next}Doctrine Fixtures
 - {:.next}Поведенческий плагин
     - {:.next}KnpLabs DoctrineBehaviors
@@ -62,10 +62,12 @@ style: |
 
 ## Phinx
 
+- Продукт CakePHP
 - SQL Builder
 - Платформонезависимо
 - Версионирование
 - Phinx Seed
+- Аналог Doctrine migrations и Doctrine fixtures
 
 ## Phinx Seed
 {:.fullscreen}
@@ -86,6 +88,25 @@ class UserSeeder extends Phinx\Seed\AbstractSeed {
     }
 }
 ```
+
+## Установка
+
+```bash
+
+composer require robmorgan/phinx
+./vendor/bin/phinx init
+
+```
+
+## Особенности
+
+Плюсы
+- {:.next}Простая реализация
+- {:.next}Зависимость миграций
+- {:.next}Интеграция с Faker library
+Минусы
+- {:.slide-red.next}Нет recipe
+- {:.slide-red.next}Нет команд
 
 ## Заключение
 
