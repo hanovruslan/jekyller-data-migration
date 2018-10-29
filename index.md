@@ -41,6 +41,18 @@ style: |
 
 **Изменение системных данных**
 
+## Что будет в докладе
+
+**Перечисление популярных решений**{:.next}
+**Плюсы и минусы**{:.next}П
+
+## Что НЕ будет в докладе
+
+**Live demo**{:.slide-red.next}
+**Цитирование документации**{:.slide-red.next}
+
+## Данные
+{:.title.symfoniacs}
 ## Данные
 
 - {:.next}Пользовательские данные
@@ -52,6 +64,8 @@ style: |
 - {:.next}Разные версии БД - разные данные
 
 ## Инструменты
+{:.title.symfoniacs}
+## Инструменты
 
 - {:.next}Phinx
 - {:.next}Doctrine migrations
@@ -61,7 +75,7 @@ style: |
     - {:.next}gedmo doctrine extensions
 
 ## Phinx
-{:.title}
+{:.title.symfoniacs}
 ## Phinx
 
 - Продукт CakePHP
@@ -115,7 +129,7 @@ composer require robmorgan/phinx
 **Нет symfony command (./vendor/bin/phinx ... )**{:.slide-red.next}
 
 ## Doctrine migrations
-{:.title}
+{:.title.symfoniacs}
 ## Doctrine migrations
 ```php
 # class AddVKCOM_IDToUser     extends AbstractMigration {
