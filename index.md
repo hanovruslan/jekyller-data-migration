@@ -46,9 +46,9 @@ style: |
 
 **Простота подключения**{:.next}
 
-**Версионирование**{:.next}
+**Версионирование (без костылей)**{:.next}
 
-**Зависимость миграций**{:.next}
+**Зависимость миграций (без костылей)**{:.next}
 
 **Доступные драйверы**{:.next}
 
@@ -69,6 +69,8 @@ style: |
 **Live demo**{:.slide-red.next}
 
 **Цитирование документации**{:.slide-red.next}
+
+**Мемасиков**{:.slide-red.next}
 
 ## Данные
 {:.title.symfoniacs}
@@ -213,11 +215,27 @@ class AppFixtures extends Fixture {
             $product->setName('product '.$i);
             $product->setPrice(mt_rand(10, 100));
             $manager->persist($product);
+            $this->addReference('product_' . $i, $product);
         }
         $manager->flush();
     }
 }
 ```
+
+## Особенности
+
+Плюсы
+
+**Простота подключения**{:.next}
+**Доступные драйверы (все популярные)**{:.next}
+**Транзитивные зависимости**{:.next}
+**Интеграция в приложение и тесты**{:.next}
+
+Минусы
+
+**Версионирование**{:.slide-red.next}
+**Зависимость миграций**{:.slide-red.next}
+**Богатство настроек + документация**{:.slide-red.next}
 
 ## Заключение
 {:.title.symfoniacs}
