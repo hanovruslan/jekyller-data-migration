@@ -33,7 +33,8 @@ style: |
 
 ## О докладчике
 
-* Разработчик php, java, symfony 1-4
+* Разработчик php, java
+* Symfony 1-4
 * Докладчик и организатор митапов Symfoniacs, Москва и Санкт-Петербург
 * Программист по образованию - Новосибирский государственный Университет
 
@@ -101,9 +102,7 @@ style: |
 
 - Продукт CakePHP
 - SQL Builder
-- Платформонезависимо
-- Версионирование
-- Phinx Seed
+- Phinx Seed - фикстуры
 - Аналог Doctrine migrations и Doctrine fixtures
 
 ## Phinx Seed
