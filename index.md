@@ -61,6 +61,8 @@ style: |
     - {:.next}gedmo doctrine extensions
 
 ## Phinx
+{:.title}
+## Phinx
 
 - Продукт CakePHP
 - SQL Builder
@@ -111,6 +113,28 @@ composer require robmorgan/phinx
 **Простая реализация %)**{:.slide-red.next}
 **Нет symfony recipe**{:.slide-red.next}
 **Нет symfony command (./vendor/bin/phinx ... )**{:.slide-red.next}
+
+## Doctrine migrations
+{:.title}
+## Doctrine migrations
+```php
+# class AddVKCOM_IDToUser     extends AbstractMigration {
+  class Version20100416130459 extends AbstractMigration {
+    public function up(Schema $schema)
+    {
+        $this->addSql(
+          'ALTER TABLE users ADD vkcom_id VARCHAR(255) NOT NULL'
+        );
+    }
+    public function down(Schema $schema)
+    {
+        $this->addSql(
+          'ALTER TABLE users DROP vkcom_id'
+        );
+    }
+}
+
+```
 
 ## Заключение
 
