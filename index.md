@@ -101,12 +101,15 @@ composer require robmorgan/phinx
 ## Особенности
 
 Плюсы
-- {:.next}Простая реализация
-- {:.next}Зависимость миграций
-- {:.next}Интеграция с Faker library
+
+**Простая реализация**{:.next}
+**Зависимость миграций**{:.next}
+**Интеграция с Faker library**{:.next}
+
 Минусы
-- {:.slide-red.next}Нет recipe
-- {:.slide-red.next}Нет команд
+
+**Нет recipe**{:.slide-red.next}
+**Нет команд**{:.slide-red.next}
 
 ## Заключение
 
