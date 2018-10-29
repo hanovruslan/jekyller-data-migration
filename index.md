@@ -56,7 +56,7 @@ style: |
 
 **Интеграция в приложение и тесты**{:.next}
 
-**транзитивные зависимости**{:.next}
+**Транзитивные зависимости**{:.next}
 
 ## Что будет в докладе
 
@@ -108,7 +108,6 @@ style: |
 ## Phinx Seed
 {:.fullscreen}
 ```php
-<?php
 
 class UserSeeder extends Phinx\Seed\AbstractSeed {
     public function run() {
@@ -154,6 +153,7 @@ composer require robmorgan/phinx
 ## Doctrine migrations
 {:.fullscreen}
 ```php
+
 # class AddVKCOM_IDToUser     extends AbstractMigration {
   class Version20100416130459 extends AbstractMigration {
     public function up(Schema $schema) {
@@ -198,14 +198,14 @@ composer require doctrine/doctrine-migrations-bundle
 Минусы
 
 **Простота подключения**{:.slide-red.next}
-**Транзитивные зависимости**{:.next}
+**Транзитивные зависимости**{:.slide-red.next}
 
 ## Doctrine Fixtures
 {:.title.symfoniacs}
 ## Doctrine Fixtures
 {:.fullscreen}
 ```php
-<?php
+
 class AppFixtures extends Fixture {
     public function load(ObjectManager $manager) {
         for ($i = 0; $i < 20; $i++) {
@@ -229,7 +229,7 @@ class AppFixtures extends Fixture {
 
 **Найти эффективные стыки инструментов исходя из первого пункта**
 
-**Комбинация известных инструментов**
+**Создавать свои пакеты и бандлы**
 
 ## Вопросы?
 {:.contacts}
