@@ -108,7 +108,7 @@ composer require robmorgan/phinx
 
 Минусы
 
-**Простая реализация %) **{:.next}
+**Простая реализация %)**{:.next}
 **Нет symfony recipe**{:.slide-red.next}
 **Нет symfony command**{:.slide-red.next}
 
