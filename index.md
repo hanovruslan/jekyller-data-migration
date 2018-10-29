@@ -97,6 +97,7 @@ style: |
 - {:.next}Поведенческий плагин
     - {:.next}KnpLabs DoctrineBehaviors
     - {:.next}gedmo doctrine extensions
+- {:.next}Импорт из файла
 
 ## Phinx
 {:.title.symfoniacs}
@@ -236,6 +237,48 @@ class AppFixtures extends Fixture {
 **Версионирование**{:.slide-red.next}
 **Зависимость миграций**{:.slide-red.next}
 **Богатство настроек + документация**{:.slide-red.next}
+
+## Поведенческий плагин
+{:.title.symfoniacs}
+## Поведенческий плагин
+
+**KnpLabs DoctrineBehaviors**
+
+**Gedmo doctrine extensions**
+
+## Поведенческий плагин
+{:.fullscreen}
+```php
+
+/**
+ * @ORM\Table(name="article")
+ * @ORM\Entity
+ * @Gedmo\SoftDeleteable(fieldName="deletedAt", timeAware=false, hardDelete=true)
+ */
+class Article {
+    /**
+     * @Gedmo\Translatable
+     * @ORM\Column(name="title", type="string", length=128)
+     */
+    private $title;
+
+}
+```
+
+## Особенности
+
+Плюсы
+
+**Версионирование**{:.next}
+**Зависимость миграций**{:.next}
+**Доступные драйверы (все популярные)**{:.next}
+**Богатство настроек + документация**{:.next}
+**Интеграция в приложение и тесты**{:.next}
+**Транзитивные зависимости**{:.next}
+
+Минусы
+
+**Простота подключения**{:.slide-red.next}
 
 ## Заключение
 {:.title.symfoniacs}
