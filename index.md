@@ -131,23 +131,21 @@ composer require robmorgan/phinx
 ## Doctrine migrations
 {:.title.symfoniacs}
 ## Doctrine migrations
+{:.fullscreen}
 ```php
 # class AddVKCOM_IDToUser     extends AbstractMigration {
   class Version20100416130459 extends AbstractMigration {
-    public function up(Schema $schema)
-    {
+    public function up(Schema $schema) {
         $this->addSql(
           'ALTER TABLE users ADD vkcom_id VARCHAR(255) NOT NULL'
         );
     }
-    public function down(Schema $schema)
-    {
+    public function down(Schema $schema) {
         $this->addSql(
           'ALTER TABLE users DROP vkcom_id'
         );
     }
 }
-
 ```
 
 ## Заключение
