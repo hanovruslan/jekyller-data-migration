@@ -22,4 +22,4 @@ author:
         url:  http://ifmo.ru
 
 fork_url: https://github.com/hanovruslan/jekyller-data-migration
-progress: true
+progress: false
