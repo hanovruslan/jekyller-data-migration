@@ -44,9 +44,12 @@ style: |
 ## Критерии отбора
 
 **Простота подключения**{:.next}
-**Богатство настроек**{:.next}
 **Версионирование**{:.next}
+**Зависимость миграций**{:.next}
+**Доступные драйверы**{:.next}
+**Богатство настроек + документация**{:.next}
 **Интеграция в приложение и тесты**{:.next}
+**транзитивные зависимости**{:.next}
 
 ## Что будет в докладе
 
@@ -130,15 +133,16 @@ composer require robmorgan/phinx
 
 Плюсы
 
-**Простая реализация**{:.next}
+**Простота подключения**{:.next}
+**Версионирование**{:.next}
 **Зависимость миграций**{:.next}
-**Интеграция с Faker library**{:.next}
+**Богатство настроек + документация**{:.next}
+**Транзитивные зависимости**{:.next}
 
 Минусы
 
-**Простая реализация %)**{:.slide-red.next}
-**Нет symfony recipe**{:.slide-red.next}
-**Нет symfony command (./vendor/bin/phinx ... )**{:.slide-red.next}
+**Доступные драйверы (mysql, postgres, sqlite, SQL Server)**{:.slide-red.next}
+**Интеграция в приложение и тесты**{:.slide-red.next}
 
 ## Doctrine migrations
 {:.title.symfoniacs}
@@ -159,6 +163,57 @@ composer require robmorgan/phinx
     }
 }
 ```
+
+## Установка
+
+```bash
+
+composer require doctrine/doctrine-migrations-bundle
+
+```
+
+## Особенности
+<!--
+**Простота подключения**{:.next}
+**Версионирование**{:.next}
+**Зависимость миграций**{:.next}
+**Доступные драйверы**{:.next}
+**Богатство настроек**{:.next}
+**Интеграция в приложение и тесты**{:.next}
+**Транзитивные зависимости**{:.next}
+-->
+Плюсы
+
+**Версионирование**{:.next}
+**Зависимость миграций**{:.next}
+**Доступные драйверы (все популярные)**{:.next}
+**Богатство настроек + документация**{:.next}
+**Интеграция в приложение и тесты**{:.next}
+
+Минусы
+
+**Простота подключения**{:.slide-red.next}
+**Транзитивные зависимости**{:.next}
+
+## Doctrine Fixtures
+{:.title.symfoniacs}
+## Doctrine Fixtures
+{:.fullscreen}
+```php
+<?php
+class AppFixtures extends Fixture {
+    public function load(ObjectManager $manager) {
+        for ($i = 0; $i < 20; $i++) {
+            $product = new Product();
+            $product->setName('product '.$i);
+            $product->setPrice(mt_rand(10, 100));
+            $manager->persist($product);
+        }
+        $manager->flush();
+    }
+}
+```
+
 ## Заключение
 {:.title.symfoniacs}
 ## Данные - это сложно
