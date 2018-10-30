@@ -105,7 +105,7 @@ style: |
 - SQL Builder
 - Аналог Doctrine migrations и Doctrine fixtures
 - Phinx Seed
-- \@packagist 6.5M, 3 596
+- @packagist 6.5M, 3 596
 
 ## Phinx Seed
 {:.fullscreen}
@@ -143,7 +143,7 @@ class UserSeeder extends Phinx\Seed\AbstractSeed {
 
 ## Doctrine
 {:.title.symfoniacs}
-## Doctrine Migrations и Doctrine Fixtrure \@packagist
+## Doctrine Migrations и Doctrine Fixtrure @packagist
 
 Migrations
 
