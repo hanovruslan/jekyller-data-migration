@@ -319,7 +319,7 @@ class Article {
 - {:.next}Поведенческий плагин - 4.5
 - {:.next}Свой поведенческий плагин - 6 (или 0 :))
 
-## Сейчас - Doctrine Migrations или Phinx?
+## Сейчас - Doctrine Migrations?
 {:.blockquote}
 ## Светлое будущее - Свой поведенческий плагин?
 {:.blockquote}
