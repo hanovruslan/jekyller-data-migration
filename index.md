@@ -155,7 +155,7 @@ Fixtures
 - 18.5M, 985 (52.9) lib
 - 16.0M, 824 (51.8) bundle
 
-Phinx - 6.6M, 3 596 (*554.8*)
+Phinx - 6.6M, 3 596 (_554.8_)
 
 ## Doctrine Migrations
 {:.title.symfoniacs}
@@ -207,7 +207,7 @@ Phinx - 6.6M, 3 596 (*554.8*)
  - Doctrine ORM
  - Входит в TOP30 самых популярных symfony пакетов
  - Релиз ALPHA - конец 2012 года
- - Релиз - середина *2013* года
+ - Релиз - середина _2013_ года
 
 ## Doctrine Fixtures
 {:.fullscreen}
