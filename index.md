@@ -91,7 +91,7 @@ style: |
 ## Варианты
 
 - {:.next}Phinx
-- {:.next}Doctrine migrations
+- {:.next}Doctrine Migrations
 - {:.next}Doctrine Fixtures
 - {:.next}Поведенческий плагин
     - {:.next}KnpLabs DoctrineBehaviors
@@ -103,7 +103,7 @@ style: |
 
 - Продукт CakePHP
 - SQL Builder
-- Аналог Doctrine migrations и Doctrine fixtures
+- Аналог Doctrine Migrations и Doctrine fixtures
 - Phinx Seed
 - @packagist 6.5M, 3 596
 
@@ -157,16 +157,16 @@ Fixtures
 
 Phinx - 6.6M, 3 596 (*554.8*)
 
-## Doctrine migrations
+## Doctrine Migrations
 {:.title.symfoniacs}
-## Doctrine migrations
+## Doctrine Migrations
 
  - Doctrine ORM
  - Входит в TOP30 самых популярных symfony пакетов
  - Релиз ALPHA - конец 2012 года
  - Релиз - середина 2015 года
 
-## Doctrine migrations
+## Doctrine Migrations
 {:.fullscreen}
 ```php
 
@@ -202,12 +202,12 @@ Phinx - 6.6M, 3 596 (*554.8*)
 
 ## Doctrine Fixtures
 {:.title.symfoniacs}
-## Doctrine migrations
+## Doctrine Fixtures
 
  - Doctrine ORM
  - Входит в TOP30 самых популярных symfony пакетов
  - Релиз ALPHA - конец 2012 года
- - Релиз - середина **2013** года
+ - Релиз - середина *2013* года
 
 ## Doctrine Fixtures
 {:.fullscreen}
