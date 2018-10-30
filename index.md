@@ -147,8 +147,8 @@ class UserSeeder extends Phinx\Seed\AbstractSeed {
 
 Migrations
 
-- lib    - 20M, 1 584 (%79.9)
-- bundle - 16M, 1 304 (%81)
+- `lib    - 20M, 1 584 (%79.9)`
+- `bundle - 16M, 1 304 (%81)`
 
 Fixtures
 
