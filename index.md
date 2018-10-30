@@ -313,11 +313,11 @@ class Article {
 
 ## Выбор
 
-- {:.next}Phinx - 4.5
-- {:.next}Doctrine Migrations - 4.5
+- {:.next}Phinx - 4
 - {:.next}Doctrine Fixtures - 4
+- {:.next}Doctrine Migrations - 4.5
 - {:.next}Поведенческий плагин - 4.5
-- {:.next}Свой поведенческий плагин - 6 или 0
+- {:.next}Свой поведенческий плагин - 6 (или 0 :))
 
 ## Сейчас - Doctrine Migrations или Phinx?
 {:.blockquote}
