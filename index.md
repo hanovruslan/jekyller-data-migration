@@ -42,21 +42,6 @@ style: |
 
 **Изменение системных данных**
 
-## Критерии отбора
-
-**Простота подключения**{:.next}
-
-**Версионирование (без костылей)**{:.next}
-
-**Зависимость миграций (без костылей)**{:.next}
-
-**Доступные драйверы**{:.next}
-
-**Богатство настроек + документация**{:.next}
-
-**Интеграция в приложение и тесты**{:.next}
-
-**Транзитивные зависимости**{:.next}
 
 ## Что будет в докладе
 
@@ -76,19 +61,41 @@ style: |
 {:.title.symfoniacs}
 ## Данные
 
-* Пользовательские могут быть разными на разных инсталляциях
-* Системные должны быть одинаковыми на всех инсталляциях
+* Пользовательские могут быть **разными** на разных инсталляциях
+* Системные должны быть **одинаковыми** на всех инсталляциях
 
-## Инструменты
+## Чего хотим?
+
+**Автоматически изменять набор (системных) данных**
+
+## Как схема данных?
+{:.blockquote}
+## Критерии отбора
+
+**Простота подключения**{:.next}
+
+**Версионирование (без костылей)**{:.next}
+
+**Зависимость миграций (без костылей)**{:.next}
+
+**Доступные драйверы**{:.next}
+
+**Богатство настроек + документация**{:.next}
+
+**Интеграция в приложение и тесты**{:.next}
+
+**Транзитивные зависимости**{:.next}
+
+## Варианты
 {:.title.symfoniacs}
-## Инструменты
+## Варианты
 
 - {:.next}Phinx
 - {:.next}Doctrine migrations
 - {:.next}Doctrine Fixtures
 - {:.next}Поведенческий плагин
     - {:.next}KnpLabs DoctrineBehaviors
-    - {:.next}gedmo doctrine extensions
+    - {:.next}Gedmo doctrine extensions
 
 ## Phinx
 {:.title.symfoniacs}
@@ -96,8 +103,9 @@ style: |
 
 - Продукт CakePHP
 - SQL Builder
-- Phinx Seed - фикстуры
 - Аналог Doctrine migrations и Doctrine fixtures
+- Phinx Seed
+- \@packagist 6.5M, 3 596
 
 ## Phinx Seed
 {:.fullscreen}
@@ -105,6 +113,8 @@ style: |
 
 class UserSeeder extends Phinx\Seed\AbstractSeed {
     public function run() {
+        // empty the table
+        $posts->truncate();
         $data = [[
             'body'    => 'foo',
             'created' => date('Y-m-d H:i:s'),
@@ -112,19 +122,8 @@ class UserSeeder extends Phinx\Seed\AbstractSeed {
         $posts = $this->table('posts');
         $posts->insert($data)
               ->save();
-        // empty the table
-        $posts->truncate();
     }
 }
-```
-
-## Установка
-
-```bash
-
-composer require robmorgan/phinx
-./vendor/bin/phinx init
-
 ```
 
 ## Особенности
@@ -142,8 +141,29 @@ composer require robmorgan/phinx
 **Доступные драйверы (mysql, postgres, sqlite, SQL Server)**{:.slide-red.next}
 **Интеграция в приложение и тесты**{:.slide-red.next}
 
+## Doctrine
+{:.title.symfoniacs}
+## Doctrine Migrations и Doctrine Fixtrure \@packagist
+
+Migrations
+
+- lib    - 20M, 1 584
+- bundle - 16M, 1 304
+
+Fixtures
+
+- lib    - 18.5M, 985
+- bundle - 16.0M, 824
+
 ## Doctrine migrations
 {:.title.symfoniacs}
+## Doctrine migrations
+
+ - Doctrine ORM
+ - Входит в TOP30 самых популярных symfony пакетов
+ - Релиз ALPHA - конец 2012 года
+ - Релиз - середина 2015 года
+
 ## Doctrine migrations
 {:.fullscreen}
 ```php
@@ -163,24 +183,8 @@ composer require robmorgan/phinx
 }
 ```
 
-## Установка
-
-```bash
-
-composer require doctrine/doctrine-migrations-bundle
-
-```
-
 ## Особенности
-<!--
-**Простота подключения**{:.next}
-**Версионирование**{:.next}
-**Зависимость миграций**{:.next}
-**Доступные драйверы**{:.next}
-**Богатство настроек**{:.next}
-**Интеграция в приложение и тесты**{:.next}
-**Транзитивные зависимости**{:.next}
--->
+
 Плюсы
 
 **Версионирование**{:.next}
@@ -196,6 +200,13 @@ composer require doctrine/doctrine-migrations-bundle
 
 ## Doctrine Fixtures
 {:.title.symfoniacs}
+## Doctrine migrations
+
+ - Doctrine ORM
+ - Входит в TOP30 самых популярных symfony пакетов
+ - Релиз ALPHA - конец 2012 года
+ - Релиз - середина **2013** года
+
 ## Doctrine Fixtures
 {:.fullscreen}
 ```php
