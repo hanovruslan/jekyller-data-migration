@@ -270,12 +270,13 @@ class AppFixtures extends Fixture {
  * @Gedmo\SoftDeleteable(fieldName="deletedAt", timeAware=false, hardDelete=true)
  */
 class Article {
+    use SoftDeletableTrait;
+
     /**
      * @Gedmo\Translatable
      * @ORM\Column(name="title", type="string", length=128)
      */
     private $title;
-
 }
 ```
 
