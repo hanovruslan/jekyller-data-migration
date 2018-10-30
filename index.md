@@ -147,13 +147,16 @@ class UserSeeder extends Phinx\Seed\AbstractSeed {
 
 Migrations
 
-- `lib    - 20M, 1 584 (%79.9)`
-- `bundle - 16M, 1 304 (%81)`
+- 20M, 1 584 (79.9) lib
+- 16M, 1 304 (80.9) bundle
 
 Fixtures
 
-- lib    - 18.5M, 985 (%53)
-- bundle - 16.0M, 824 (%51.8)
+- 18.5M, 985 (52.9) lib
+- 16.0M, 824 (51.8) bundle
+
+Phinx
+-  6.6M, 3 596 (**554.8**)
 
 ## Doctrine migrations
 {:.title.symfoniacs}
